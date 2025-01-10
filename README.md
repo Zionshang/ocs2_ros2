@@ -1,35 +1,6 @@
 # OCS2_ROS2 Toolbox
 
-## 1. Summary
-
-OCS2_ROS2 is developed based on [OCS2](https://github.com/leggedrobotics/ocs2), it was refactored to be compatible with
-ROS2 and modern cmake. Below is the current todolist of the project:
-
-- [x] modern cmake
-- [x] basic 6 examples in official documents
-- [x] WSL2 support
-- [x] Fix Quadrotor example's unexpected behavior
-- [x] Fix Mobile Manipolator's interactive marker
-- [x] perceptive locomotion demo
-- [x] tinyxml2 problem in Ubuntu 24.04 ROS2 Jazzy
-- [x] raisim demo
-- [x] mpc_net demo
-
-The IDE I used is CLion, you can follow the [guide](https://www.jetbrains.com/help/clion/ros2-tutorial.html) to set up
-the IDE.
-
-Below is my tested platform:
-* Intel Nuc X15 (i7-11800H):
-    * Ubuntu 22.04 ROS2 Humble (WSL2)
-    * Ubuntu 24.04 ROS2 Jazzy
-* Lenovo P16v (i7-13800H):
-    * Ubuntu 24.04 ROS2 Jazzy
-* Jetson Orin Nano
-    * Ubuntu 22.04 ROS2 Humble (JetPack 6.1)
-
-
-
-## 2. Installation
+## 1 Installation
 
 ### 2.1 Prerequisites
 
@@ -107,3 +78,51 @@ Quick start guide:
 ![raisim_rviz](.images/raisim_rviz.png)
 
 ### 3.3 [MPC-Net](advance%20examples/ocs2_mpcnet/)
+
+# 功能包解读
+
+所有包：22个
+ocs2_robotic_assets
+ocs2_thirdparty
+blasfeo_colcon
+ocs2_msgs
+ocs2_core
+ocs2_oc
+ocs2_mpc
+ocs2_qp_solver
+ocs2_robotic_tools
+ocs2_ros_interfaces
+ocs2_slp
+hpipm_colcon
+ocs2_ddp
+ocs2_pinocchio_interface
+ocs2_sqp
+ocs2_ipm
+ocs2_self_collision
+ocs2_sphere_approximation
+ocs2_centroidal_model
+ocs2_self_collision_visualization
+ocs2_legged_robot
+ocs2_legged_robot_ros
+
+ocs2_legged_robot_ros用到的包 18个
+ocs2_thirdparty [0.08s]
+ocs2_robotic_assets [0.08s]
+blasfeo_colcon [0.09s]
+ocs2_msgs [0.21s]
+ocs2_core [0.18s]
+ocs2_oc [0.15s]
+ocs2_mpc [0.07s]
+ocs2_qp_solver [0.09s]
+ocs2_robotic_tools [0.10s]
+ocs2_ros_interfaces [0.10s]
+hpipm_colcon [0.10s]
+ocs2_pinocchio_interface [0.11s]
+ocs2_ddp [0.12s]
+ocs2_sqp [0.08s]
+ocs2_ipm [0.09s]
+ocs2_centroidal_model [0.16s]
+ocs2_legged_robot [0.28s]
+ocs2_legged_robot_ros [0.21s]
+缺少了 ocs2_self_collision_visualization ocs2_slp ocs2_self_collision ocs2_sphere_approximation
+
